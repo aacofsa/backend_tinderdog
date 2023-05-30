@@ -1,8 +1,8 @@
 Requisitos previos:
-    * PHP 8.2
-    * Composer
-    * XAMPP/WAMPP
-    * MySQL 
+    <li> PHP 8.2
+    <li> Composer
+    <li> XAMPP/WAMPP
+    <li> MySQL 
 
 Configuracion: 
 Lo primero a configurar será la base de datos, donde se deberá de crear una nueva o utilizar una ya existente pero sin tablas para evitar problemas.
