@@ -104,7 +104,7 @@ class InteractionController extends Controller
     {
         $interaction = Interaction::find($id);
     
-        if(!$id){
+        if(!$interaction){
             return response()->json([
                 'error' =>"Not Found",
                 'message' =>"Interaction #".$id." not found"

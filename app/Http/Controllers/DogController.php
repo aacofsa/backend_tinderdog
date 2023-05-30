@@ -12,14 +12,14 @@ class DogController extends Controller
     
     public function create(Request $request): JsonResponse
     {
-        $request->validate([
+        $validated = $request->validate([
             'name' => 'required|string',
             'avatar_url' => 'required|string',
             'description' => 'required|string',
         ]);
 
         $dog = new Dog;
-        $dog->fill($request->validated());
+        $dog->fill($validated);
         $dog->save();
 
         return response()->json($dog);
